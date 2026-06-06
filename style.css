@@ -331,13 +331,43 @@ footer p {
 }
 
 /* 右下に固定（全ページ共通・スクロールしても追いかける） */
-.deco-fixed {
+.deco-fixed-wrap {
   position: fixed;
   bottom: 0;
   right: 12px;
-  width: 130px;
-  pointer-events: none;
   z-index: 100;
+  text-align: center;
+  text-decoration: none;
+}
+
+.deco-fixed-wrap .balloon {
+  display: inline-block;
+  background: #fff;
+  color: #c05070;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: 2px solid #f9a8bf;
+  margin-bottom: 4px;
+  box-shadow: 0 2px 6px rgba(249,168,191,0.4);
+  position: relative;
+}
+
+.deco-fixed-wrap .balloon::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: #f9a8bf;
+}
+
+.deco-fixed {
+  display: block;
+  width: 110px;
+  pointer-events: none;
 }
 
 /* 左サイドに半分はみ出す */
