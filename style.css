@@ -1,0 +1,373 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Meiryo', sans-serif;
+  background-color: #fff5f7;
+  color: #3a3a3a;
+  line-height: 1.8;
+}
+
+/* ヘッダー */
+header {
+  background: linear-gradient(135deg, #f9c0cb, #f4a0b5);
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(244, 160, 181, 0.3);
+}
+
+header h1 {
+  font-size: 1.4rem;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.15);
+  padding: 0 20px;
+  line-height: 1.5;
+}
+
+/* ナビゲーション */
+nav {
+  background-color: #f9a8bf;
+  padding: 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 0;
+}
+
+nav ul li a {
+  display: block;
+  padding: 12px 20px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: #e07090;
+}
+
+/* メインコンテンツ */
+main {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* セクションカード */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 32px;
+  margin-bottom: 28px;
+  box-shadow: 0 2px 12px rgba(244, 160, 181, 0.15);
+  border-left: 5px solid #f9a8bf;
+}
+
+.card h2 {
+  font-size: 1.25rem;
+  color: #c05070;
+  margin-bottom: 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #f9c0cb;
+}
+
+.card h3 {
+  font-size: 1.05rem;
+  color: #d06080;
+  margin: 20px 0 10px;
+}
+
+.card p {
+  font-size: 0.95rem;
+  margin-bottom: 14px;
+}
+
+.card ul,
+.card ol {
+  padding-left: 1.5em;
+  margin-bottom: 14px;
+  font-size: 0.95rem;
+}
+
+.card ul li,
+.card ol li {
+  margin-bottom: 8px;
+}
+
+/* ヒーローバナー（ホームのみ） */
+.hero {
+  background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+  border-radius: 16px;
+  padding: 48px 32px;
+  text-align: center;
+  margin-bottom: 36px;
+  box-shadow: 0 4px 16px rgba(244, 160, 181, 0.2);
+}
+
+.hero h2 {
+  font-size: 1.6rem;
+  color: #c05070;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.hero p {
+  font-size: 1rem;
+  color: #5a3a45;
+  max-width: 560px;
+  margin: 0 auto 20px;
+}
+
+/* チャプターリンクボタン */
+.chapter-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.chapter-btn {
+  display: inline-block;
+  background-color: #f9a8bf;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: background-color 0.2s, transform 0.1s;
+  box-shadow: 0 2px 8px rgba(249, 168, 191, 0.4);
+}
+
+.chapter-btn:hover {
+  background-color: #e07090;
+  transform: translateY(-2px);
+}
+
+/* ページナビゲーション（前へ／次へ） */
+.page-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.page-nav a {
+  display: inline-block;
+  background-color: #fff;
+  color: #c05070;
+  padding: 10px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+  border: 2px solid #f9a8bf;
+  transition: all 0.2s;
+}
+
+.page-nav a:hover {
+  background-color: #f9a8bf;
+  color: #fff;
+}
+
+/* フッター */
+footer {
+  background: linear-gradient(135deg, #f9c0cb, #f4a0b5);
+  text-align: center;
+  padding: 24px 20px;
+  margin-top: 60px;
+  color: #fff;
+  font-size: 0.85rem;
+}
+
+footer p {
+  margin-bottom: 6px;
+}
+
+/* 強調テキスト */
+.highlight {
+  background: linear-gradient(transparent 50%, #ffd6e0 50%);
+  font-weight: bold;
+}
+
+.important-box {
+  background: #fce4ec;
+  border: 1px solid #f9a8bf;
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin: 16px 0;
+  font-size: 0.95rem;
+}
+
+/* バナー目次 */
+.toc-banners {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 8px;
+}
+
+.toc-banner-link {
+  display: block;
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+  box-shadow: 0 3px 10px rgba(244,160,181,0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+}
+
+.toc-banner-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(244,160,181,0.35);
+}
+
+.toc-banner-link img {
+  width: 100%;
+  display: block;
+  border-radius: 12px 12px 0 0;
+}
+
+.toc-banner-link span {
+  display: block;
+  background: #f9a8bf;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+  padding: 10px;
+  border-radius: 0 0 12px 12px;
+}
+
+.toc-banner-link:hover span {
+  background: #e07090;
+}
+
+.toc-banner-placeholder {
+  background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+  color: #c05070;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 12px 12px 0 0;
+  line-height: 1.6;
+}
+
+/* 章バナー画像 */
+.chapter-banner {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+  margin-bottom: 24px;
+  box-shadow: 0 3px 12px rgba(244,160,181,0.25);
+}
+
+/* ヒーローのバービー画像 */
+.hero-barbie {
+  width: 100%;
+  max-width: 480px;
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 16px;
+}
+
+/* 本文中のバービー画像 */
+.barbie-img {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+  margin: 20px 0;
+}
+
+/* ===== バービー装飾画像 ===== */
+
+/* 右フロート（テキストが左に回り込む） */
+.deco-right {
+  float: right;
+  width: 160px;
+  margin: 0 -10px 10px 20px;
+  pointer-events: none;
+}
+
+/* 左フロート */
+.deco-left {
+  float: left;
+  width: 150px;
+  margin: 0 20px 10px -10px;
+  pointer-events: none;
+}
+
+/* セクション下部・中央に置く */
+.deco-center-bottom {
+  display: block;
+  width: 200px;
+  margin: 24px auto -10px;
+  pointer-events: none;
+}
+
+/* フッター直前の大きめ装飾 */
+.deco-pre-footer {
+  display: block;
+  width: 180px;
+  margin: 0 auto;
+  pointer-events: none;
+}
+
+/* 右下に固定（全ページ共通・スクロールしても追いかける） */
+.deco-fixed {
+  position: fixed;
+  bottom: 0;
+  right: 12px;
+  width: 130px;
+  pointer-events: none;
+  z-index: 100;
+}
+
+/* 左サイドに半分はみ出す */
+.deco-side-left {
+  float: left;
+  width: 130px;
+  margin: 10px 16px 0 -30px;
+  pointer-events: none;
+}
+
+/* 右サイドに半分はみ出す */
+.deco-side-right {
+  float: right;
+  width: 130px;
+  margin: 10px -30px 0 16px;
+  pointer-events: none;
+}
+
+/* レスポンシブ */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.1rem;
+  }
+
+  nav ul li a {
+    padding: 10px 14px;
+    font-size: 0.8rem;
+  }
+
+  .hero h2 {
+    font-size: 1.3rem;
+  }
+
+  .card {
+    padding: 20px;
+  }
+}

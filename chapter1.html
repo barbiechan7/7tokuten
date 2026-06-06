@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>第1章：一生ダイエッター思考診断｜7大特典前編</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .checklist {
+      list-style: none;
+      padding-left: 0;
+    }
+    .checklist li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 10px 14px;
+      margin-bottom: 8px;
+      background: #fff5f7;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .checklist li:hover {
+      background: #fce4ec;
+    }
+    .checklist li input[type="checkbox"] {
+      margin-top: 3px;
+      width: 18px;
+      height: 18px;
+      accent-color: #f9a8bf;
+      flex-shrink: 0;
+      cursor: pointer;
+    }
+    .result-box {
+      border-radius: 10px;
+      padding: 18px 20px;
+      margin-bottom: 14px;
+      font-size: 0.95rem;
+    }
+    .result-box .score {
+      font-weight: bold;
+      font-size: 1.05rem;
+      margin-bottom: 6px;
+    }
+    .result-green {
+      background: #f0fdf4;
+      border-left: 5px solid #86efac;
+    }
+    .result-yellow {
+      background: #fffbeb;
+      border-left: 5px solid #fcd34d;
+    }
+    .result-pink {
+      background: #fce4ec;
+      border-left: 5px solid #f9a8bf;
+    }
+    .closing-box {
+      background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+      border-radius: 12px;
+      padding: 24px;
+      text-align: center;
+      margin-top: 24px;
+    }
+    .closing-box p {
+      margin-bottom: 10px;
+      font-size: 0.95rem;
+    }
+    .closing-box .big {
+      font-size: 1.05rem;
+      font-weight: bold;
+      color: #c05070;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>着たい服を着こなせる女性に<br>7大特典（前編）</h1>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="index.html">ホーム</a></li>
+    <li><a href="chapter1.html" class="active">第1章</a></li>
+    <li><a href="chapter2.html">第2章</a></li>
+    <li><a href="chapter3.html">第3章</a></li>
+    <li><a href="chapter4.html">第4章</a></li>
+  </ul>
+</nav>
+
+<main>
+
+  <div class="card">
+    <img src="images/banner1.png" alt="生涯ダイエッター診断" class="chapter-banner">
+    <h2>第1章：一生ダイエッター思考診断</h2>
+    <img src="images/b3.png" alt="" class="deco-side-right">
+    <p style="margin-bottom: 20px;">
+      〜チェックが多いほど、痩せにくい思考グセがあるかも〜
+    </p>
+
+    <ul class="checklist" id="checklist">
+      <li><input type="checkbox"> ダイエットを何度も始めては挫折したことがある</li>
+      <li><input type="checkbox"> 食べすぎた翌日、罪悪感で自分を責めてしまう</li>
+      <li><input type="checkbox"> 体重が増えると、その日1日気分が沈む</li>
+      <li><input type="checkbox"> 「痩せたら〇〇する」と、痩せることを条件にしていることがある</li>
+      <li><input type="checkbox"> 他の人の体型と自分を比べて落ち込むことがよくある</li>
+      <li><input type="checkbox"> 食事制限はできるのに、なぜか体重が減らない時期がある</li>
+      <li><input type="checkbox"> 自分に合ったダイエット方法がわからず、色々試してきた</li>
+      <li><input type="checkbox"> ダイエット成功より、リバウンドの回数の方が多い</li>
+    </ul>
+
+    <p id="count-display" style="text-align:center; font-weight:bold; color:#c05070; margin: 20px 0 24px; font-size:1.05rem;"></p>
+
+    <h3>【結果】</h3>
+
+    <div class="result-box result-green">
+      <div class="score">0〜2個：比較的健全な思考</div>
+      今は大丈夫！でも"ダイエッター思考"は知らないうちに育つもの。予防のためにも、ぜひ読んでみてください。
+    </div>
+
+    <div class="result-box result-yellow">
+      <div class="score">3〜5個：一生ダイエッター思考の入り口</div>
+      少しずつ、体よりも"頭の中"が疲れてきているサイン。今が見直しどきです。
+    </div>
+
+    <div class="result-box result-pink">
+      <div class="score">6〜8個：がっつり一生ダイエッター思考</div>
+      頑張ってきたのに、なぜか報われない…それはあなたのせいじゃない。思考グセが邪魔をしているだけ。バービーと一緒に、その呪いから抜け出しましょう！
+    </div>
+
+    <div class="closing-box">
+      <p>💬 チェックしてみてどうでしたか？</p>
+      <p class="big">「痩せなきゃ」より「自分を知る」ことが、<br>本当の変化への第一歩。</p>
+      <p>ダイエットをやめるのではなく、<br><strong>"消耗するダイエット"をやめよう。</strong></p>
+    </div>
+
+    <img src="images/b1.png" alt="" class="deco-center-bottom">
+    <div class="page-nav" style="margin-top: 32px;">
+      <a href="index.html">← ホームに戻る</a>
+      <a href="chapter2.html">第2章へ →</a>
+    </div>
+  </div>
+
+</main>
+
+<img src="images/b2.png" alt="" class="deco-fixed">
+
+<footer>
+  <p>© 2026 着たい服を着こなせる女性に｜7大特典前編</p>
+  <p>無断転載・再配布を禁じます。</p>
+</footer>
+
+<script>
+  const items = document.querySelectorAll('#checklist input[type="checkbox"]');
+  const display = document.getElementById('count-display');
+
+  function updateCount() {
+    const checked = [...items].filter(cb => cb.checked).length;
+    if (checked === 0) {
+      display.textContent = '';
+    } else {
+      display.textContent = `チェック数：${checked} 個`;
+    }
+  }
+
+  items.forEach(cb => cb.addEventListener('change', updateCount));
+
+  document.querySelectorAll('#checklist li').forEach(li => {
+    li.addEventListener('click', e => {
+      if (e.target.tagName !== 'INPUT') {
+        const cb = li.querySelector('input');
+        cb.checked = !cb.checked;
+        updateCount();
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
