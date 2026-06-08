@@ -3,35 +3,121 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>第3章：ダイエットへの想い｜7大特典前編</title>
+  <title>第3章：コンビニの食事選び｜7大特典前編</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    .cta-box {
-      background: linear-gradient(135deg, #ffe4ef, #fd90b6);
-      border-radius: 14px;
-      padding: 28px 24px;
-      text-align: center;
-      margin-top: 28px;
+    .merit-list {
+      list-style: none;
+      padding: 0;
     }
-    .cta-box p {
+    .merit-list li {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      padding: 12px 16px;
+      background: #fff5f9;
+      border-radius: 8px;
+      margin-bottom: 10px;
       font-size: 0.95rem;
+    }
+    .merit-list li .num {
+      font-weight: bold;
+      color: #fd90b6;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+      width: 24px;
+    }
+
+    /* コンビニセクション */
+    .store-section {
+      margin-bottom: 10px;
+    }
+    .store-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: linear-gradient(135deg, #ffe4ef, #fd90b6, #f070a0);
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 10px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin-bottom: 14px;
+      cursor: pointer;
+    }
+    .category-block {
       margin-bottom: 16px;
     }
-    .cta-btn {
-      display: inline-block;
-      background: linear-gradient(135deg, #ffc8dd, #e878a8);
-      color: #fff;
-      padding: 14px 36px;
-      border-radius: 30px;
-      text-decoration: none;
+    .category-title {
+      font-size: 0.9rem;
       font-weight: bold;
-      font-size: 1rem;
-      box-shadow: 0 3px 10px rgba(253, 144, 182, 0.5);
-      transition: filter 0.2s, transform 0.1s;
+      color: #c85680;
+      background: #ffe4ef;
+      padding: 6px 14px;
+      border-radius: 6px;
+      margin-bottom: 8px;
+      display: inline-block;
     }
-    .cta-btn:hover {
-      filter: brightness(0.94);
-      transform: translateY(-2px);
+    .ranking-list {
+      list-style: none;
+      padding: 0;
+    }
+    .ranking-list li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 9px 14px;
+      background: #fff;
+      border: 1px solid #ffe4ef;
+      border-radius: 8px;
+      margin-bottom: 6px;
+      font-size: 0.9rem;
+    }
+    .rank-badge {
+      background: #fd90b6;
+      color: #fff;
+      font-weight: bold;
+      font-size: 0.8rem;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .rank-badge.gold   { background: #f5c44a; color: #7a5000; }
+    .rank-badge.silver { background: #b0bec5; color: #37474f; }
+    .rank-badge.bronze { background: #d4956a; color: #fff; }
+
+    /* ポイントセクション */
+    .point-box {
+      background: #fff5f9;
+      border-left: 5px solid #fd90b6;
+      border-radius: 0 10px 10px 0;
+      padding: 16px 20px;
+      margin-bottom: 14px;
+    }
+    .point-box .point-title {
+      font-weight: bold;
+      color: #c85680;
+      margin-bottom: 6px;
+      font-size: 0.95rem;
+    }
+    .point-box p {
+      font-size: 0.9rem;
+      margin: 0;
+    }
+
+    .closing-box {
+      background: linear-gradient(135deg, #ffe4ef, #fd90b6);
+      border-radius: 14px;
+      padding: 24px;
+      margin-top: 10px;
+      font-size: 0.95rem;
+    }
+    .closing-box p {
+      margin-bottom: 10px;
     }
   </style>
 </head>
@@ -53,21 +139,179 @@
 
 <main>
 
+  <!-- イントロ -->
   <div class="card">
-    <img src="images/banner3.png" alt="ダイエットへの想い" class="chapter-banner">
-    <h2>第3章：ダイエットへの想い</h2>
-    <p>
-      第3章では、バービーのダイエットへの想いをnoteの記事でお届けしています。
+    <img src="images/banner4.png" alt="コンビニの食事選び" class="chapter-banner">
+    <h2>第3章：コンビニの食事選び</h2>
+    <p style="color:#d86890; font-weight:bold; margin-bottom:16px;">
+      セブンイレブン編・ファミマ編・ローソン編
     </p>
     <p>
-      下のボタンから記事をお読みください。
+      ダイエットと聞くと「毎日自炊しないと…」と思いがちですが、
+      忙しい社会人にはなかなか難しいですよね。そこで活用したいのが<strong>コンビニ</strong>です✨
     </p>
 
-    <div class="cta-box">
-      <p>バービーのダイエットへの想い、<br>ぜひ読んでみてください 🌸</p>
-      <a href="https://note.com/yuki7451/n/n577fef452724" class="cta-btn" target="_blank" rel="noopener noreferrer">
-        noteの記事を読む →
-      </a>
+    <h3 style="margin-top:20px;">コンビニダイエットのメリット</h3>
+    <ul class="merit-list">
+      <li><span class="num">1</span><span><strong>手軽で時短！</strong>レンジで温めるだけ、開けてすぐ食べられる商品が多く、調理の手間ゼロ。仕事帰りでもすぐにヘルシーな食事が可能です。</span></li>
+      <li><span class="num">2</span><span><strong>栄養成分が明記されていて選びやすい</strong>カロリーやPFCバランスがパッケージに明記されており、自分の食事管理がしやすいのも大きな魅力です。</span></li>
+      <li><span class="num">3</span><span><strong>全国どこでも買える安定感</strong>自宅近くでも職場の最寄りでも継続しやすい。出張先や移動中でもダイエットのルールを崩さずに済みます。</span></li>
+      <li><span class="num">4</span><span><strong>選択肢が豊富で飽きない</strong>サラダチキン・スープ・低糖質おにぎり・おでんなど、味もジャンルも多彩で継続しやすいです。</span></li>
+    </ul>
+    <p style="margin-top:14px;">それでは早速、各コンビニのおすすめ商品をランキング形式でチェックしましょう✨</p>
+  </div>
+
+  <!-- ファミリーマート -->
+  <div class="card store-section">
+    <div class="store-header">🏪 ファミリーマート</div>
+
+    <div class="category-block">
+      <div class="category-title">🍙 おにぎり編</div>
+      <ul class="ranking-list">
+        <li><span class="rank-badge gold">1</span>手巻 紅しゃけ</li>
+        <li><span class="rank-badge silver">2</span>天然まぐろのねぎとろ細巻</li>
+        <li><span class="rank-badge bronze">3</span>青磯海苔 まぐろたくあん</li>
+        <li><span class="rank-badge">4</span>手巻 辛子明太子</li>
+        <li><span class="rank-badge">5</span>ごちむすび 本まぐろ（わさび醤油たれ）</li>
+      </ul>
+    </div>
+
+    <div class="category-block">
+      <div class="category-title">🍱 お弁当編</div>
+      <ul class="ranking-list">
+        <li><span class="rank-badge gold">1</span>軟骨入りつくね&鶏そぼろごはん</li>
+        <li><span class="rank-badge silver">2</span>スパイス香る！タコライス</li>
+        <li><span class="rank-badge bronze">3</span>鶏のうまみ！鶏そぼろ弁当</li>
+        <li><span class="rank-badge">4</span>お出汁香る ふんわり玉子の親子丼</li>
+        <li><span class="rank-badge">5</span>南国の味！ガパオライス！</li>
+      </ul>
+    </div>
+
+    <div class="category-block">
+      <div class="category-title">🥗 サラダ編</div>
+      <ul class="ranking-list">
+        <li><span class="rank-badge gold">1</span>サラダチキンのサラダ</li>
+        <li><span class="rank-badge silver">2</span>たんぱく質が摂れる！豚しゃぶのサラダ</li>
+        <li><span class="rank-badge bronze">3</span>フレッシュ野菜サラダ</li>
+        <li><span class="rank-badge">4</span>たんぱく質が摂れる！ローストチキンのパスタサラダ</li>
+        <li><span class="rank-badge">5</span>ゆず塩ラーメンサラダ</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- セブンイレブン -->
+  <div class="card store-section">
+    <div class="store-header">🏪 セブンイレブン</div>
+
+    <div class="category-block">
+      <div class="category-title">🍙 おにぎり編</div>
+      <ul class="ranking-list">
+        <li><span class="rank-badge gold">1</span>手巻おにぎり 炭火焼紅しゃけ</li>
+        <li><span class="rank-badge silver">2</span>手巻おにぎり 具たっぷり辛子明太子</li>
+        <li><span class="rank-badge bronze">3</span>手巻おにぎり 北海道産昆布</li>
+        <li><span class="rank-badge">4</span>直巻おむすび 熟成紅すじこ醤油漬け</li>
+        <li><span class="rank-badge">5</span>直巻おむすび 焼しゃけ</li>
+      </ul>
+    </div>
+
+    <div class="category-block">
+      <div class="category-title">🍱 お弁当編</div>
+      <ul class="ranking-list">
+        <li><span class="rank-badge gold">1</span>炙り焼きさばとおだしごはん</li>
+        <li><span class="rank-badge silver">2</span>親子丼</li>
+        <li><span class="rank-badge bronze">3</span>炭火焼き鳥丼</li>
+        <li><span class="rank-badge">4</span>１／２日分の野菜 中華飯</li>
+        <li><span class="rank-badge">5</span>バター香る海老ピラフ</li>
+      </ul>
+    </div>
+
+    <div class="category-block">
+      <div class="category-title">🥪 パン・サンドイッチ編</div>
+      <ul class="ranking-list">
+        <li><span class="rank-badge gold">1</span>たんぱく質が摂れるチキンコブサンド</li>
+        <li><span class="rank-badge silver">2</span>たんぱく質が摂れるチキン＆チリ</li>
+        <li><span class="rank-badge bronze">3</span>たんぱく質が摂れるチキンロール</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ローソン -->
+  <div class="card store-section">
+    <div class="store-header">🏪 ローソン</div>
+
+    <div class="category-block">
+      <div class="category-title">🍙 おにぎり編</div>
+      <ul class="ranking-list">
+        <li><span class="rank-badge gold">1</span>金しゃりおにぎり 焼さけハラミ</li>
+        <li><span class="rank-badge silver">2</span>金しゃりおにぎり いくら醤油漬</li>
+        <li><span class="rank-badge bronze">3</span>金しゃりおにぎり 出汁巻玉子と辛子明太子</li>
+        <li><span class="rank-badge">4</span>金しゃりおにぎり 熟成生たらこ</li>
+        <li><span class="rank-badge">5</span>金しゃりおにぎり わさび醤油仕立ての漬けサーモン(三陸産銀鮭)</li>
+      </ul>
+    </div>
+
+    <div class="category-block">
+      <div class="category-title">🍗 主菜編</div>
+      <ul class="ranking-list">
+        <li><span class="rank-badge gold">1</span>サラダチキン プレーン</li>
+        <li><span class="rank-badge silver">2</span>炭火焼サラダチキン てりやき</li>
+        <li><span class="rank-badge bronze">3</span>サラダチキン スティック バジル</li>
+        <li><span class="rank-badge">4</span>炙りいかスティック</li>
+        <li><span class="rank-badge">5</span>たこぶつ</li>
+      </ul>
+    </div>
+
+    <div class="category-block">
+      <div class="category-title">🥦 副菜編</div>
+      <ul class="ranking-list">
+        <li><span class="rank-badge gold">1</span>8種具材の豆腐とひじき煮</li>
+        <li><span class="rank-badge silver">2</span>ごぼうこんにゃく</li>
+        <li><span class="rank-badge bronze">3</span>切り干し大根</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 5つのポイント -->
+  <div class="card">
+    <h2>🍙 コンビニ食でダイエットを成功させる5つのポイント</h2>
+
+    <div class="point-box">
+      <div class="point-title">① たんぱく質を必ず1品入れる</div>
+      <p>サラダチキン・焼き魚・ゆで卵・豆腐など、たんぱく質は筋肉を守りながら脂肪を燃やす最重要栄養素。1食に必ず1品は意識して選びましょう！</p>
+    </div>
+
+    <div class="point-box">
+      <div class="point-title">② 白米より「具材で選ぶ」おにぎりを</div>
+      <p>炭水化物をゼロにする必要はなし。鮭・明太子・まぐろなど、たんぱく質や良質な脂質が摂れる具材のおにぎりを選ぶのが正解です◎</p>
+    </div>
+
+    <div class="point-box">
+      <div class="point-title">③ 揚げ物・菓子パンはできるだけ避ける</div>
+      <p>カロリーが高いだけでなく、血糖値が急上昇して脂肪に変わりやすい。どうしても食べたい時は「主食の代わり」として取り入れてみて！</p>
+    </div>
+
+    <div class="point-box">
+      <div class="point-title">④ 野菜・食物繊維を先に食べる</div>
+      <p>サラダや煮物など野菜系を食事の最初に食べることで、血糖値の急上昇を防ぎ、太りにくい食べ方に。コンビニの副菜コーナーを活用しよう✨</p>
+    </div>
+
+    <div class="point-box">
+      <div class="point-title">⑤ 「なんとなく選ぶ」をやめる</div>
+      <p>コンビニの選択肢が多すぎて迷うのが一番のNG。「おにぎり＋サラダチキン＋副菜1品」など自分なりのパターンを決めておくと継続しやすいです！</p>
+    </div>
+  </div>
+
+  <!-- まとめ -->
+  <div class="card">
+    <div class="closing-box">
+      <p>いかがでしたでしょうか？😊 今回はコンビニの商品の中でダイエット中でも食べられる商品を全てまとめました！</p>
+      <p>コンビニを活用したダイエットは、忙しい人でも無理なく続けやすいのが最大の魅力です。ポイントは</p>
+      <ul style="padding-left:1.5em; margin-bottom:12px;">
+        <li>PFCバランスを整えた食事パターンを決めておくこと</li>
+        <li>複数の商品を使い分けて飽きを防ぐこと</li>
+        <li>良質な脂質＝不飽和脂肪酸を意識すること</li>
+      </ul>
+      <p>大切なのは<strong>"なんとなく選ぶ"のではなく、自分にとってのベストな選択肢を持っておくこと</strong>。コンビニの豊富なラインナップを味方につけて、手軽に、でもしっかり結果の出るダイエットを続けていきましょう！！</p>
     </div>
 
     <div class="page-nav" style="margin-top: 32px;">
@@ -78,7 +322,7 @@
 
 </main>
 
-<a href="#top" class="deco-fixed-wrap"><span class="balloon">TOPに戻る ↑</span><img src="images/b1.png" alt="" class="deco-fixed"></a>
+<a href="#top" class="deco-fixed-wrap"><span class="balloon">TOPに戻る ↑</span><img src="images/b3.png" alt="" class="deco-fixed"></a>
 
 <footer>
   <p>© 2026 着たい服を着こなせる女性に｜7大特典前編</p>
