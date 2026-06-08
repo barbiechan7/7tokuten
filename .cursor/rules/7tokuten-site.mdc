@@ -1,0 +1,28 @@
+---
+description: 7tokuten 特典サイトの編集ガイド（GitHub Pages）
+globs: "**/*"
+alwaysApply: true
+---
+
+# 7tokuten サイト
+
+## プロジェクト
+- パス: `/Users/yukin/Sites/7tokuten`
+- 公開: https://barbiechan7.github.io/7tokuten/
+- GitHub: https://github.com/barbiechan7/7tokuten （main → Pages）
+
+## 構成
+- `index.html` — ホーム（ヒーロー写真 `images/hero-photo.png`、2×2章ボタン）
+- `chapter1.html` — 一生ダイエッター思考診断
+- `chapter2.html` — 自己分析（CodePen）
+- `chapter3.html` — コンビニの食事選び（banner4）
+- `chapter4.html` — ダイエットへの想い + note + 相談会案内（banner3、`images/tokuten-menu.png`）
+- `style.css` — メインカラー `#fd90b6`、CSS変数 `--gradient-ch1`〜`ch4`
+
+## 編集の流れ
+1. 静的HTML/CSSのみ。フレームワークなし。
+2. 本文中の装飾イラスト（deco-*）は削除済み。章バナー・右下TOPボタンは残す。
+3. 公開: `git add` → `commit` → `git push origin main`（ユーザーが push を依頼したときのみ）
+
+## 詳細メモ
+`memo.md` を参照。
