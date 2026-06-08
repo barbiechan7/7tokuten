@@ -4,23 +4,36 @@
   box-sizing: border-box;
 }
 
+:root {
+  --color-main: #fd90b6;
+  --color-main-dark: #f070a0;
+  --color-main-light: #ffe4ef;
+  --color-main-pale: #fff5f9;
+  --color-text-accent: #c85680;
+  --color-text-sub: #d86890;
+  --gradient-ch1: linear-gradient(135deg, #ffb8d4, #fd90b6);
+  --gradient-ch2: linear-gradient(135deg, #fd90b6, #f56aa0);
+  --gradient-ch3: linear-gradient(135deg, #ffc8dd, #e878a8);
+  --gradient-ch4: linear-gradient(135deg, #fda8c4, #fd78ae);
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
   font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Meiryo', sans-serif;
-  background-color: #fff5f7;
+  background-color: var(--color-main-pale);
   color: #3a3a3a;
   line-height: 1.8;
 }
 
 /* ヘッダー */
 header {
-  background: linear-gradient(135deg, #f9c0cb, #f4a0b5);
+  background: linear-gradient(135deg, var(--color-main-light), var(--color-main), var(--color-main-dark));
   padding: 20px 0;
   text-align: center;
-  box-shadow: 0 2px 8px rgba(244, 160, 181, 0.3);
+  box-shadow: 0 2px 8px rgba(253, 144, 182, 0.35);
 }
 
 header h1 {
@@ -33,7 +46,7 @@ header h1 {
 
 /* ナビゲーション */
 nav {
-  background-color: #f9a8bf;
+  background-color: var(--color-main);
   padding: 0;
 }
 
@@ -57,7 +70,7 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a.active {
-  background-color: #e07090;
+  background-color: var(--color-main-dark);
 }
 
 /* メインコンテンツ */
@@ -73,21 +86,21 @@ main {
   border-radius: 12px;
   padding: 32px;
   margin-bottom: 28px;
-  box-shadow: 0 2px 12px rgba(244, 160, 181, 0.15);
-  border-left: 5px solid #f9a8bf;
+  box-shadow: 0 2px 12px rgba(253, 144, 182, 0.15);
+  border-left: 5px solid var(--color-main);
 }
 
 .card h2 {
   font-size: 1.25rem;
-  color: #c05070;
+  color: var(--color-text-accent);
   margin-bottom: 16px;
   padding-bottom: 10px;
-  border-bottom: 1px dashed #f9c0cb;
+  border-bottom: 1px dashed var(--color-main-light);
 }
 
 .card h3 {
   font-size: 1.05rem;
-  color: #d06080;
+  color: var(--color-text-sub);
   margin: 20px 0 10px;
 }
 
@@ -110,17 +123,17 @@ main {
 
 /* ヒーローバナー（ホームのみ） */
 .hero {
-  background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+  background: linear-gradient(135deg, var(--color-main-light), var(--color-main));
   border-radius: 16px;
   padding: 48px 32px;
   text-align: center;
   margin-bottom: 36px;
-  box-shadow: 0 4px 16px rgba(244, 160, 181, 0.2);
+  box-shadow: 0 4px 16px rgba(253, 144, 182, 0.2);
 }
 
 .hero h2 {
   font-size: 1.6rem;
-  color: #c05070;
+  color: var(--color-text-accent);
   margin-bottom: 16px;
   line-height: 1.5;
 }
@@ -143,19 +156,23 @@ main {
 
 .chapter-btn {
   display: inline-block;
-  background-color: #f9a8bf;
   color: #fff;
   padding: 12px 28px;
   border-radius: 30px;
   text-decoration: none;
   font-weight: bold;
   font-size: 0.9rem;
-  transition: background-color 0.2s, transform 0.1s;
-  box-shadow: 0 2px 8px rgba(249, 168, 191, 0.4);
+  transition: filter 0.2s, transform 0.1s;
+  box-shadow: 0 2px 8px rgba(253, 144, 182, 0.4);
 }
 
+.chapter-btn:nth-child(1) { background: var(--gradient-ch1); }
+.chapter-btn:nth-child(2) { background: var(--gradient-ch2); }
+.chapter-btn:nth-child(3) { background: var(--gradient-ch3); }
+.chapter-btn:nth-child(4) { background: var(--gradient-ch4); }
+
 .chapter-btn:hover {
-  background-color: #e07090;
+  filter: brightness(0.94);
   transform: translateY(-2px);
 }
 
@@ -171,24 +188,24 @@ main {
 .page-nav a {
   display: inline-block;
   background-color: #fff;
-  color: #c05070;
+  color: var(--color-text-accent);
   padding: 10px 24px;
   border-radius: 30px;
   text-decoration: none;
   font-weight: bold;
   font-size: 0.9rem;
-  border: 2px solid #f9a8bf;
+  border: 2px solid var(--color-main);
   transition: all 0.2s;
 }
 
 .page-nav a:hover {
-  background-color: #f9a8bf;
+  background-color: var(--color-main);
   color: #fff;
 }
 
 /* フッター */
 footer {
-  background: linear-gradient(135deg, #f9c0cb, #f4a0b5);
+  background: linear-gradient(135deg, var(--color-main-light), var(--color-main), var(--color-main-dark));
   text-align: center;
   padding: 24px 20px;
   margin-top: 60px;
@@ -202,13 +219,13 @@ footer p {
 
 /* 強調テキスト */
 .highlight {
-  background: linear-gradient(transparent 50%, #ffd6e0 50%);
+  background: linear-gradient(transparent 50%, var(--color-main-light) 50%);
   font-weight: bold;
 }
 
 .important-box {
-  background: #fce4ec;
-  border: 1px solid #f9a8bf;
+  background: var(--color-main-light);
+  border: 1px solid var(--color-main);
   border-radius: 8px;
   padding: 16px 20px;
   margin: 16px 0;
@@ -228,14 +245,14 @@ footer p {
   border-radius: 12px;
   overflow: hidden;
   text-decoration: none;
-  box-shadow: 0 3px 10px rgba(244,160,181,0.2);
+  box-shadow: 0 3px 10px rgba(253, 144, 182, 0.2);
   transition: transform 0.2s, box-shadow 0.2s;
   position: relative;
 }
 
 .toc-banner-link:hover {
   transform: translateY(-3px);
-  box-shadow: 0 6px 18px rgba(244,160,181,0.35);
+  box-shadow: 0 6px 18px rgba(253, 144, 182, 0.35);
 }
 
 .toc-banner-link img {
@@ -246,22 +263,27 @@ footer p {
 
 .toc-banner-link span {
   display: block;
-  background: #f9a8bf;
   color: #fff;
   text-align: center;
   font-weight: bold;
   font-size: 0.9rem;
   padding: 10px;
   border-radius: 0 0 12px 12px;
+  transition: filter 0.2s;
 }
 
+.toc-banner-link:nth-child(1) span { background: var(--gradient-ch1); }
+.toc-banner-link:nth-child(2) span { background: var(--gradient-ch2); }
+.toc-banner-link:nth-child(3) span { background: var(--gradient-ch3); }
+.toc-banner-link:nth-child(4) span { background: var(--gradient-ch4); }
+
 .toc-banner-link:hover span {
-  background: #e07090;
+  filter: brightness(0.94);
 }
 
 .toc-banner-placeholder {
-  background: linear-gradient(135deg, #fce4ec, #f8bbd0);
-  color: #c05070;
+  background: linear-gradient(135deg, var(--color-main-light), var(--color-main));
+  color: var(--color-text-accent);
   font-size: 1.3rem;
   font-weight: bold;
   text-align: center;
@@ -276,7 +298,7 @@ footer p {
   border-radius: 12px;
   display: block;
   margin-bottom: 24px;
-  box-shadow: 0 3px 12px rgba(244,160,181,0.25);
+  box-shadow: 0 3px 12px rgba(253, 144, 182, 0.25);
 }
 
 /* ヒーローのバービー画像 */
@@ -347,13 +369,13 @@ footer p {
 .deco-fixed-wrap .balloon {
   position: relative;
   background: #fff;
-  color: #c05070;
+  color: var(--color-text-accent);
   font-size: 0.78rem;
   font-weight: bold;
   padding: 7px 12px;
   border-radius: 16px;
-  border: 2px solid #f9a8bf;
-  box-shadow: 0 2px 8px rgba(249,168,191,0.4);
+  border: 2px solid var(--color-main);
+  box-shadow: 0 2px 8px rgba(253, 144, 182, 0.4);
   margin-bottom: 30px;
   white-space: nowrap;
 }
@@ -365,7 +387,7 @@ footer p {
   right: -10px;
   bottom: 10px;
   border: 6px solid transparent;
-  border-left-color: #f9a8bf;
+  border-left-color: var(--color-main);
 }
 .deco-fixed-wrap .balloon::before {
   content: '';
