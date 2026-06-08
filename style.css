@@ -125,7 +125,8 @@ main {
 .hero {
   display: flex;
   align-items: center;
-  gap: 20px;
+  justify-content: center;
+  gap: 16px;
   background: linear-gradient(135deg, var(--color-main-light), var(--color-main));
   border-radius: 16px;
   padding: 36px 28px;
@@ -136,7 +137,7 @@ main {
 }
 
 .hero-body {
-  flex: 1;
+  flex: 0 1 auto;
   min-width: 0;
 }
 
@@ -171,7 +172,7 @@ main {
 }
 
 .hero-photo {
-  flex-shrink: 0;
+  flex: 0 0 auto;
   width: 38%;
   max-width: 220px;
   border-radius: 20px;
@@ -465,7 +466,7 @@ footer p {
 }
 
 /* レスポンシブ */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   header h1 {
     font-size: 1.1rem;
   }
@@ -475,11 +476,21 @@ footer p {
     font-size: 0.8rem;
   }
 
+  main {
+    margin: 24px auto;
+    padding: 0 16px;
+  }
+
   .hero {
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     text-align: center;
-    padding: 32px 20px;
+    padding: 28px 18px;
+    gap: 20px;
+  }
+
+  .hero-body {
+    width: 100%;
   }
 
   .hero h2 {
@@ -487,18 +498,24 @@ footer p {
     text-align: center;
   }
 
+  .hero p {
+    text-align: center;
+  }
+
   .hero .chapter-links {
-    max-width: 300px;
-    margin: 0 auto;
+    width: 100%;
+    max-width: none;
+    margin: 0;
   }
 
   .hero-photo {
-    width: 65%;
-    max-width: 200px;
+    width: 100%;
+    max-width: 260px;
+    margin: 0 auto;
   }
 
   .hero-photo img {
-    height: 220px;
+    height: 240px;
   }
 
   .card {
