@@ -12,12 +12,15 @@ alwaysApply: true
 - GitHub: https://github.com/barbiechan7/7tokuten （main → Pages）
 
 ## 構成
-- `index.html` — ホーム（ヒーロー写真 `images/hero-photo.png`、2×2章ボタン）
+- `index.html` — ホーム（ヒーロー写真 `images/hero-photo.png`、7章ボタン）
 - `chapter1.html` — 一生ダイエッター思考診断
 - `chapter2.html` — 自己分析（CodePen）
 - `chapter3.html` — コンビニの食事選び（banner4）
-- `chapter4.html` — ダイエットへの想い + note + 相談会案内（banner3、`images/tokuten-menu.png`）
-- `style.css` — メインカラー `#fd90b6`、CSS変数 `--gradient-ch1`〜`ch4`
+- `chapter4.html` — ダイエットへの想い（note・banner3）
+- `chapter5.html` — 土台を知る体質改善方法（banner5）
+- `chapter6.html` — 体重別やることリスト（banner6）
+- `chapter7.html` — ながらOK宅トレ動画5選（banner7）
+- `style.css` — メインカラー `#fd90b6`、CSS変数 `--gradient-ch1`〜`ch7`
 
 ## 編集の流れ
 1. 静的HTML/CSSのみ。フレームワークなし。

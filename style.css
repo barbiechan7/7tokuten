@@ -15,6 +15,9 @@
   --gradient-ch2: linear-gradient(135deg, #fd90b6, #f56aa0);
   --gradient-ch3: linear-gradient(135deg, #ffc8dd, #e878a8);
   --gradient-ch4: linear-gradient(135deg, #fda8c4, #fd78ae);
+  --gradient-ch5: linear-gradient(135deg, #ffb0cc, #f06098);
+  --gradient-ch6: linear-gradient(135deg, #fd98b8, #e868a0);
+  --gradient-ch7: linear-gradient(135deg, #ffaac8, #f878a8);
 }
 
 html {
@@ -60,7 +63,7 @@ nav ul {
 
 nav ul li a {
   display: block;
-  padding: 12px 20px;
+  padding: 12px 14px;
   color: #fff;
   text-decoration: none;
   font-size: 0.9rem;
@@ -159,9 +162,9 @@ main {
 .hero .chapter-links {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
+  gap: 10px;
   width: 100%;
-  max-width: 340px;
+  max-width: 360px;
 }
 
 .hero .chapter-btn {
@@ -214,6 +217,9 @@ main {
 .chapter-btn:nth-child(2) { background: var(--gradient-ch2); }
 .chapter-btn:nth-child(3) { background: var(--gradient-ch3); }
 .chapter-btn:nth-child(4) { background: var(--gradient-ch4); }
+.chapter-btn:nth-child(5) { background: var(--gradient-ch5); }
+.chapter-btn:nth-child(6) { background: var(--gradient-ch6); }
+.chapter-btn:nth-child(7) { background: var(--gradient-ch7); }
 
 .chapter-btn:hover {
   filter: brightness(0.94);
@@ -320,6 +326,9 @@ footer p {
 .toc-banner-link:nth-child(2) span { background: var(--gradient-ch2); }
 .toc-banner-link:nth-child(3) span { background: var(--gradient-ch3); }
 .toc-banner-link:nth-child(4) span { background: var(--gradient-ch4); }
+.toc-banner-link:nth-child(5) span { background: var(--gradient-ch5); }
+.toc-banner-link:nth-child(6) span { background: var(--gradient-ch6); }
+.toc-banner-link:nth-child(7) span { background: var(--gradient-ch7); }
 
 .toc-banner-link:hover span {
   filter: brightness(0.94);
@@ -472,8 +481,8 @@ footer p {
   }
 
   nav ul li a {
-    padding: 10px 14px;
-    font-size: 0.8rem;
+    padding: 8px 10px;
+    font-size: 0.75rem;
   }
 
   main {
