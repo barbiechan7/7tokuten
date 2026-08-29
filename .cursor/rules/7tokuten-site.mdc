@@ -17,9 +17,9 @@ alwaysApply: true
 - `chapter2.html` — 自己分析（CodePen）
 - `chapter3.html` — コンビニの食事選び（banner4）
 - `chapter4.html` — ダイエットへの想い（note・banner3）
-- `chapter5.html` — 土台を知る体質改善方法（banner5）
-- `chapter6.html` — 体重別やることリスト（banner6）
-- `chapter7.html` — ながらOK宅トレ動画5選（banner7）
+- `chapter5.html` — あなたが痩せられない本当の理由（banner5）
+- `chapter6.html` — 着たい服を着るための体型別やることリスト（banner6）
+- `chapter7.html` — バービーちゃん厳選！おすすめ宅トレ動画5選（banner7）
 - `style.css` — メインカラー `#fd90b6`、CSS変数 `--gradient-ch1`〜`ch7`
 
 ## 編集の流れ
